@@ -1,13 +1,12 @@
-﻿/*Programowanie proceduralne
-grupa P00-33a
-08.04.2019 Zaliczenie czastkowe 2
-imie:
-nazwisko:
-indeks:
-*/
+# Druga kartkówka
 
-/*Zadanie 2 (10 pkt.)
+## Zadanie 1
+Odpowiedz na dwa poniższe pytania:
+a) jaka jest budowa (struktura) pliku nagłówkowego (rozszerzenie *.h)?
+b) jaka jest budowa (struktura) pliku źródłowego (rozszerzenie *.c)?
 
+
+## Zadanie 2
 Zaimplementuj funkcje void gnomesort(int t[], int n)
 ktora sortuje rosnaco n-elementowa tablice
 liczb calkowitych wedlug algorytmu opisanego w definicji funkcji.
@@ -24,8 +23,8 @@ void swap(int t[], int i, int j);
 Nie modyfikuj ich!
 
 Pracuj jedynie w definicji funkcji void gnomesort(int t[], int n).
-*/
 
+<pre>
 #include<stdio.h>
 #include<stdlib.H>
 #include<time.h>
@@ -98,13 +97,38 @@ void gnomesort(int t[], int n){
    Jesli element j jest wiekszy od elementu j+1 to zamieniamy je miejscami.
    Po zamianie sprawdzamy czy j jest wieksze od 0
    i czy element element j jest mniejszy od elementu j-1
-     -jesli oba warunki sa spelnione to przypisujemy j wartosc -1.*/
-     int j;
-     for(j=0; j<n-1; j++){
-        if(t[j] > t[j+1]){
-            swap(t,j,j+1);
-            if(j>0 && t[j]<t[j-1])
-                j = -1;
+     -jesli oba warunki sa spelnione to przypisujemy j wartosc -1 .*/
+    int j; //1p
+    for (j=0;j<n-1;++j) //2p
+        if (t[j]>t[j+1]){ //2p
+            swap(t,j,j+1); //2p
+            if (j>0 && t[j]<t[j-1]) //2p
+            j=-1; //1p
         }
-     }
 }
+</pre>
+
+
+# Zadanie 3
+Zadeklaruj i zdefiniuj funkcje iseven(), ktora zwraca wartosc calkowita 1,
+jesli wszystkie elementy tablicy podanej jako pierwszy argument funkcji
+sa parzyste; w przeciwnym przypadku funkcja zwraca 0.
+Rozmiar tablicy przekazywany jest jako drugi argument funkcji.
+
+Dla ulatwienia w programie zdefiniowano funkcje int main(),
+ktora sluzy do testowania funkcji iseven().
+
+<pre>
+#include <stdio.h>
+
+
+int main()
+{
+    int a1[] = {2, 4, 6, 8, 0};
+    int a2[] = {1, 2, 3, 4, 5};
+    int n = 5;
+    printf("iseven(a1): %d\n", iseven(a1, n));
+    printf("iseven(a2): %d\n", iseven(a2, n));
+    return 0;
+}
+</pre>

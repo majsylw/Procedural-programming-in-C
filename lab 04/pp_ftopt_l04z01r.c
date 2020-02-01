@@ -9,5 +9,7 @@ indeks:
 /* Zadanie 1 (4 pkt)
 Zaprojektuj funkcje (tzn. napisz deklaracje), ktora:
 a) zamienia wartosci 2 liczb calkowitych
+void zmien(int,int);
 b) wyznacza sumę dwóch wielomianow dowolnego stopnia
+float[] suma_wielomianow(int,float[],int,float[]);
 */

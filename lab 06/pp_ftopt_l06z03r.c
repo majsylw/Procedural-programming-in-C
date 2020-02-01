@@ -1,6 +1,6 @@
 ﻿/*Programowanie proceduralne
 grupa P00-33a
-08.04.2019 Zaliczenie czastkowe 1
+08.04.2019 Zaliczenie czastkowe 2
 imie:
 nazwisko:
 indeks:
