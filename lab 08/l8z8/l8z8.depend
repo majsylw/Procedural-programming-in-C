@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1523802049 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectorDouble.h"
+
+1523802102 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z8\vectordouble.h
+
+1523801914 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z8\vectordouble.c
+	<stdlib.h>
+	"vectorDouble.h"
+
+1523802049 source:c:\users\sylwia\desktop\doktorat_pwr\0. kursy\programowanie proceduralne_2017-18\lab8\l8z8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectorDouble.h"
+
+1523802102 c:\users\sylwia\desktop\doktorat_pwr\0. kursy\programowanie proceduralne_2017-18\lab8\l8z8\vectordouble.h
+
+1523801914 source:c:\users\sylwia\desktop\doktorat_pwr\0. kursy\programowanie proceduralne_2017-18\lab8\l8z8\vectordouble.c
+	<stdlib.h>
+	"vectorDouble.h"
+

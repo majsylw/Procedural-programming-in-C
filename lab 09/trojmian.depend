@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1524305653 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_3\trojmian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"trojmian.h"
+
+1524304900 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_3\trojmian\trojmian.h
+
+1524305618 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_3\trojmian\trojmian.c
+	<stdio.h>
+	<stdlib.h>
+	"trojmian.h"
+

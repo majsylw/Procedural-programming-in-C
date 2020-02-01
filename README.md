@@ -1,5 +1,5 @@
 # Procedural programming in C
- Notes, scripts and excercises to conducted studies at Wroclaw University of Technology in summer 2018/2019
+ Notes, scripts and excercises to conducted studies at Wroclaw University of Technology in summer 2017/2018
 
 ## Table of contents
 * [General info](#general-info)
@@ -23,9 +23,6 @@ The main goal of the course is to continue teaching basics of programming in C.
 List of features ready and TODOs for future development
 * Solutions for some excercises
 
-To-do list:
-* Create directories for all laboratories
-* Create comprehensive notes
 
 ## Status
 Project is: _finished_

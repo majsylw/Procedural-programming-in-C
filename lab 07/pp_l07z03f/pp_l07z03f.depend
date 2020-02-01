@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1523223193 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\pp_l071_p00-07f — rozw\pp_l07z03f\main.c
+	<stdio.h>
+	<stdlib.h>
+	"suma.h"
+
+1523221428 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\pp_l071_p00-07f — rozw\pp_l07z03f\suma.h
+
+1523221873 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\pp_l071_p00-07f — rozw\pp_l07z03f\suma.c
+	"suma.h"
+

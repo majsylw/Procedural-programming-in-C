@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1523199134 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z3\complexc.c
+	<stdio.h>
+	<math.h>
+	"complex.h"
+
+1523199174 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z3\complex.h
+
+1523201198 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z3\main.c
+	"complexc.h"
+	<stdio.h>
+
+1523201162 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z3\complexc.h
+

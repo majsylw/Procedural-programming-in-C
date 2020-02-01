@@ -1,47 +1,67 @@
 /*Programowanie proceduralne
-grupa P00-33a
-10.06.2019 Kolokwium zaliczeniowe
+grupa P00-07f
+06.06.2018 Kolokwium
 imie:
 nazwisko:
 indeks:
 */
 
-/*Zadanie 4 (10 pkt.)
+/*Zadanie 4 (10 pkt)
 
-Napisz program, ktory zapisuje do pliku 100 wierszy
-zawierajacych dwie liczby losowe przedzielone spacja
-(liczby z przedzialu 0, 1 z rozkladu jednostajnego).
+Napisz program, który pyta uzytkownika o liczbe calkowita n, a następnie alokuje tablice
+n liczb rzeczywistych (2 pkt). Nastepnie do tablicy wpisz liczby losowe z przedzialu 0-99
+i uporzadkuj je rosnąco (2 pkt). Wynik zapisz do pliku o nazwie podanej przez uzytkownika (5 pkt).
 
-Program powinien prosic uzytkownika o nazwe pliku, do ktorego zapisac liczby
-(możesz przyjąć, że nazwa pliku nie przekroczy 50 znaków).
-W przypadku niepowodzenia w otwarciu pliku
-program powinien wypisywać dane na ekran.
-
+W programie nalezy sprawdzac, czy plik do zapisu zostal poprawnie otwarty (1 pkt).
 */
-#include<stdio.h>                               //1 dolaczenie wlasciwych bibliotek
+
+
+//ZAD. 4 - proponowane rozwiązanie
+
+#include<stdio.h>
 #include<stdlib.h>
-#define N 51
 
-int main(){
-    FILE* plik;                                 //1 deklaracja zmiennej plikowej
-    char nazwa[N];
+int main()
+{
+    int n, i,j;
+    double *tab;
+    double tmp;
+    char nazwa[20];
+    FILE* fptr;
 
-    printf("Podaj nazwe: ");                    //1 pobranie nazwy pliku od uzytkownika
-    scanf("%s",nazwa);
+    printf("podaj rozmiar tablicy: ");
+    scanf("%d",&n);
+    tab=malloc(n*sizeof(*tab));
 
-    plik = fopen(nazwa,"w");                    //1 otwarcie pliku
-    if(!plik)
-        plik = stdout;                          //1 zmiana celu wypisywania przez przypisanie stdout
-                                                //lub odpowiednie połączenie instrukcji if, fprintf, printf
-    int i;
-    for(i=0; i<100; i++){                       //1 zapetlenie zapisu
-        double x;
-        x = (double)rand()/RAND_MAX;            //1 wylosowanie zmiennej z podanego rozkladu
-        fprintf(plik,"%g",x);
-        x = (double)rand()/RAND_MAX;            //1 wylosowanie drugiej zmiennej z podanego rozkladu
-        fprintf(plik," %g\n",x);                //1 zapis do pliku oczekiwanym formacie
+    for(i=0;i<n;i++){
+       tab[i]=rand()%100;
+       printf("\n%lf",tab[i]);
     }
 
-    fclose(plik);                               //1 zamkniecie pliku
+    //SORTOWANIE
+	for (i = 0; i<n; i++){
+		for (j=0; j<n-1-i; j++){
+			if (tab[j] > tab[j+1]){
+            tmp=tab[j];
+            tab[j]=tab[j+1];
+            tab[j+1]=tmp;
+			}
+		}
+    }
+
+    printf("\npodaj nazwe pliku do zapisu (z roz.): ");
+    scanf("%s",nazwa);
+    printf("\n podana nazwa=%s",nazwa);
+
+    fptr = fopen(nazwa,"w");
+    for(i=0;i<n;i++){
+     if(fptr != NULL){
+           fprintf(fptr,"%f\n",tab[i]);}
+     else{
+        printf("ERROR");}
+    }
+
+    fclose(fptr);
+    free(tab);
     return 0;
 }

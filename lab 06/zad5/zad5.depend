@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1523197496 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\zad5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"sort.h"
+
+1523197452 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\zad5\sort.h
+
+1523197480 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\kartkówka_2\zad5\sort.c
+	"sort.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

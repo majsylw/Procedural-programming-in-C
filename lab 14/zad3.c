@@ -1,39 +1,31 @@
 /*Programowanie proceduralne
-grupa P00-33a
-10.06.2019 Kolokwium zaliczeniowe
+grupa P00-07f
+06.06.2018 Kolokwium
 imie:
 nazwisko:
 indeks:
 */
 
-/*
-Zadanie 3 (10 pkt.)
+/*Zadanie 3 (10 pkt.)
 
-(2 pkt.)
-Zdefiniuj strukture o nazwie BlackHole, zawierajaca dwa pola:
-- tablice do przechowania nazwy czarnej dziury o dlugosci 6-ciu znakow
-- zmienna do przechowania temperatury czarnej dziury wyrazonej w Kelwinach
-Za pomoca odpowiedniego slowa kluczowego, nadaj utworzonej strukturze alias "Hole".
+Zdefiniuj strukture complexExp reprezentujaca liczbe zespolona w postaci
+wyk³adniczej: Z = Mod(Z) * exp(i*Arg(Z)).
+Napisz funkcje pozwalajaca nadac wartosci zmiennej typu complexExp, funkcje wypisujaca
+liczbe zespolona w odpowiednim formacie na ekranie komputera oraz funkcje obliczajaca
+kwadrat liczby zespolonej, zgodnie z zasada: Z^2 = Mod(Z)^2 *exp(i*2*Arg(Z)).
+Zaprezentuj dzialanie wszystkich funkcji.
+Pamietaj o prawidlowej budowie projektu.
 
-(2 pkt.)
-Zadeklaruj i zdefiniuj funkcje o nazwie new_hole, zwracajaca wartosc typu utworzonej struktury.
-Funkcja powinna przyjmowac dwa argumenty, przechowujace 6-cio znakowa nazwe i temperature,
-ktore beda wpisane w odpowiednie pola zwracanej wartosci Hole.
+Punktacja:
+Prawidlowa budowa projektu (struktura i deklaracje w .h, definicje w .c, wywo³ania w main.c) (3pt)
+Prawidlowe zdefiniowanie struktury (2p)
+Zdefiniowanie funkcji do ustalenia wartoœci (1pt)
+Zdefiniowanie funkcji wypisuj¹cej na ekran (1pt)
+Zdefiniowanie funkcji potegujacej (1.5pt)
 
-(2 pkt.)
-Zadeklaruj i zdefiniuj funkcje o nazwie hole_mass, zwracajaca mase czarnej dziury wyrazona w kilogramach.
-Funkcja powinna przyjmowac jako argument wskaznik na zdefiniowana strukture.
-Zwracana masa powinna byc policzona wedlug wzorow zalaczonych do zadania (zad3.pdf)
-z wykorzystaniem temperatury przechowywanej w zmiennej.
+W programie g³ównym:
+Poprawne wywo³anie funkcji do ustalenia wartoœci (0.5pt)
+Poprawne wywo³anie funkcji wypisuj¹cej na ekran (0.5pt)
+Poprawne wywo³anie funkcji potegujacej (0.5pt)
 
-(2 pkt.)
-Definicje struktury, nadanie aliasu, deklaracje funkcji oraz definicje potrzebnych stalych umiesc
-w jednym pliku naglowkowym.
-Definicje funkcji umiesc w jednym pliku zrodlowym, ale innym niz jest funkcja glowna programu.
-
-(2 pkt.)
-W funkcji glownej programu zaprezentuj dzialanie zdefiniowanej struktury i funkcji poprzez:
-- utworzenie zmiennej typu Hole,
-- nadanie jej nazwy i teperatury za pomoca funkcji new_hole,
-- wypisanie w konsoli ustawionych wartosci pol zmiennej oraz masy policzonej funkcja hole_mass.
 */

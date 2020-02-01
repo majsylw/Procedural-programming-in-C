@@ -1,44 +1,44 @@
 /*Programowanie proceduralne
-grupa P00-33a
-10.06.2019 Kolokwium zaliczeniowe
+grupa P00-07f
+06.06.2018 Kolokwium
 imie:
 nazwisko:
 indeks:
 */
 
-/*
-Zadanie 1 (10 pkt.)
+/*Zadanie 1 ( 10 pkt.)
 
-Napisz program, ktory dla podanych przez uzytkownika wartosci
-a oraz n oblicza potege a^n. Liczba a jest liczba calkowita
-liczba n liczba calkowita nieujemna. Obliczenia powinne byc wykonane w funkcji.
-Deklaracja funkcji powinna znajdowac sie w osobnym pliku.
+Zadeklaruj i zdefiniuj funkcje iseven(), ktora zwraca wartosc calkowita 1,
+jesli wszystkie elementy tablicy podanej jako pierwszy argument funkcji
+sa parzyste; w przeciwnym przypadku funkcja zwraca 0.
+Rozmiar tablicy przekazywany jest jako drugi argument funkcji.
 
+Dla ulatwienia w programie zdefiniowano funkcje int main(),
+ktora sluzy do testowania funkcji iseven().
 
 */
 
-#include <stdio.h>          // umieszczenie funkcji w osobnym pliku 2 pkt.
+/* uzyskano ??/10 pkt*/
 
-int potega(int, int);      // deklaracja 1 pkt.
+#include <stdio.h>
+
+int iseven(int *, int);            // deklaracja                1
 
 int main()
 {
-    int a, n, wynik;
-    printf("Podaj podstawe potegi (a): \n");
-    scanf("%d", &a);
-    printf("Podaj wykladnik potegi (n): \n");   // wczytanie zmiennych 1 pkt.
-    scanf("%d", &n);
-    wynik=potega(a,n);
-    printf("a^n = %d \n", wynik);   // wywolanie funkcji i wyswietlenie wyniku 1 pkt.
+    int a1[] = {2, 4, 6, 8, 0};
+    int a2[] = {1, 2, 3, 4, 5};
+    int n = 5;
+    printf("iseven(a1): %d\n", iseven(a1, n));
+    printf("iseven(a2): %d\n", iseven(a2, n));
     return 0;
 }
 
-int potega(int a, int n)  // definicja 1 pkt.
+int iseven(int *a, int n)        // definicja                   1
 {
-    int i;                        // licznik 1 pkt.
-    int wynik=1;
-    for (i = 0; i < n; i++)       // petla 1 pkt.
-        wynik=wynik*a;            // konstrukcja wyniku 1 pkt.
-
-    return wynik;                 // zwrocenie wyniku 1 pkt.
+    int k;                        // licznik                    1
+    for (k = 0; k < n; k++)       // przejscie przez tablice    1
+        if (a[k]%2)               // prownywanie wartosci       2
+            return 0;             // wyjscie z funkcji: FALSE   2
+    return 1;                     // wyjscie z funkcji: TRUE    2
 }

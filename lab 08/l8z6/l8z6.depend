@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1523798693 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z6\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vector3.h"
+
+1523798547 c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z6\vector3.h
+
+1523798483 source:c:\users\sylwia\desktop\doktorat_pwr\0.kursy\programowanie proceduralne\lab8\l8z6\vector3.c
+	"vector3.h"
+	<math.h>
+
