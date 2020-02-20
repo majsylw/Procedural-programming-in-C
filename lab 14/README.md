@@ -113,10 +113,10 @@ void gnomesort(int t[], int n){
 
 ## Zadanie 3
 Zdefiniuj strukture complexExp reprezentujaca liczbe zespolona w postaci
-wykładniczej: Z = Mod(Z) * exp(i*Arg(Z)).
+wykładniczej: ```Z = Mod(Z) * exp(i*Arg(Z))```.
 Napisz funkcje pozwalajaca nadac wartosci zmiennej typu complexExp, funkcje wypisujaca
 liczbe zespolona w odpowiednim formacie na ekranie komputera oraz funkcje obliczajaca
-kwadrat liczby zespolonej, zgodnie z zasada: Z^2 = Mod(Z)^2 *exp(i*2*Arg(Z)).
+kwadrat liczby zespolonej, zgodnie z zasada: ```Z^2 = Mod(Z)^2 *exp(i*2*Arg(Z))```.
 Zaprezentuj dzialanie wszystkich funkcji.
 Pamietaj o prawidlowej budowie projektu.
 
