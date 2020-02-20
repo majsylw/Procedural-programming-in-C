@@ -20,12 +20,9 @@ The main goal of the course is to continue teaching basics of programming in C.
 * Code::Blocks
 
 ## Features
-List of features ready and TODOs for future development
+List of ready features:
 * Solutions for some excercises
-
-To-do list:
-* Create directories for all laboratories
-* Create comprehensive notes
+* Comprehensive notes in [wiki](https://github.com/majsylw/Procedural-programming-in-C/wiki) PL
 
 ## Status
 Project is: _finished_
