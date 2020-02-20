@@ -107,6 +107,7 @@ void gnomesort(int t[], int n){
             j=-1; //1p
         }
 }
+
 </pre>
 
 
