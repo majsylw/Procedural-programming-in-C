@@ -24,7 +24,7 @@ Nie modyfikuj ich!
 
 Pracuj jedynie w definicji funkcji void gnomesort(int t[], int n).
 
-<pre>
+```
 #include<stdio.h>
 #include<stdlib.H>
 #include<time.h>
@@ -106,7 +106,7 @@ void gnomesort(int t[], int n){
             j=-1; //1p
         }
 }
-</pre>
+```
 
 
 # Zadanie 3
